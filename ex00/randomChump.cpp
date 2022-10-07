@@ -6,7 +6,14 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:47:07 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/06 11:47:08 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/07 14:27:12 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+
+void	randomChump( std::string name )
+{
+	Zombie	zomb(name);
+	zomb.announce();
+}

@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:45:09 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/06 14:29:09 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/07 14:06:16 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Zombie::Zombie(std::string enter_name)
 
 Zombie::~Zombie()
 {
+	std::cout << this->name << " is died" << std::endl;
 }
 
 void	Zombie::announce( void )
