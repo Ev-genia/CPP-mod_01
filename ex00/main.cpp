@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:43:18 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/07 14:52:40 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/07 21:51:11 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int	main(int ac, char **av)
 {
-	std::string	enter_name;
-	Zombie	*zombic;
+	std::string	EnterName;
+	Zombie	*Zombic;
 
-	enter_name = std::string(&av[1][0]);
-	randomChump(enter_name);
+	EnterName = std::string(&av[1][0]);
+	randomChump(EnterName);
 
-	enter_name = std::string(&av[2][0]);
-	zombic = newZombie(enter_name);
-	zombic->announce();
-	delete(zombic);
+	EnterName = std::string(&av[2][0]);
+	Zombic = newZombie(EnterName);
+	Zombic->announce();
+	delete(Zombic);
 }

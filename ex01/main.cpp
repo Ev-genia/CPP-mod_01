@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:43:18 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/07 16:31:11 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/07 21:54:31 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int	main(int ac, char **av)
 {
-	std::string	enter_name;
+	std::string	EnterName;
 	int			i;
-	Zombie	*zombics;
+	Zombie	*Zombics;
 
-	enter_name = std::string(&av[2][0]);
-	zombics = zombieHorde(ac, enter_name);
+	EnterName = std::string(&av[2][0]);
+	Zombics = zombieHorde(ac, EnterName);
 	i = -1;
 	while (++i < ac)
-		zombics[i].announce();
-	delete[]zombics;
+		Zombics[i].announce();
+	delete[]Zombics;
 	return (0);
 }

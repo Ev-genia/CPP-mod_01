@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:45:09 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/07 16:24:43 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/07 21:55:03 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ Zombie::Zombie(void)
 	this->name = "";
 }
 
-Zombie::Zombie(std::string enter_name)
+Zombie::Zombie(std::string EnterName)
 {
-	this->name = enter_name;
+	this->name = EnterName;
 }
 
-void	Zombie::set_name(std::string enter_name)
+void	Zombie::set_name(std::string EnterName)
 {
-	this->name = enter_name;
+	this->name = EnterName;
 }
 
 Zombie::~Zombie()
