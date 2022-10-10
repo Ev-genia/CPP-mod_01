@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:34:44 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/10 16:17:16 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/10 16:46:32 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ Harl::~ Harl()
 
 void	Harl::complain(std::string level)
 {
-	Harl		help;
 	void		(Harl::*arrFunk[])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string	levelIndex[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int			i;
