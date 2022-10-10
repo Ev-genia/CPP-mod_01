@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:43:18 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/10 16:34:10 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/10 19:32:49 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(int ac, char **av)
 {
 	Harl	man;
 
-	if (ac > 2)
+	if (ac != 2)
 	{
 		std::cout << "Wrong count arguments" << std::endl;
 		return (1);
