@@ -6,7 +6,7 @@
 #    By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 11:54:51 by mlarra            #+#    #+#              #
-#    Updated: 2022/10/08 00:05:50 by mlarra           ###   ########.fr        #
+#    Updated: 2022/10/10 11:06:54 by mlarra           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ RM		=	rm -f
 
 .PHONY	:	all clean fclean re
 
-${NAME}	:	${OBJS}
+${NAME}	:	${OBJS} ${HEADER}
 			${CC} ${CFLAFS} ${SRCS} -o ${NAME}
 
 all		:	${NAME}
