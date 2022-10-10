@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:43:18 by mlarra            #+#    #+#             */
-/*   Updated: 2022/10/07 21:54:31 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/10/10 19:24:51 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ int	main(int ac, char **av)
 	int			i;
 	Zombie	*Zombics;
 
-	EnterName = std::string(&av[2][0]);
+	if (av[1])
+		EnterName = std::string(&av[1][0]);
+	else
+		EnterName = "Abrakadabra";
 	Zombics = zombieHorde(ac, EnterName);
 	i = -1;
 	while (++i < ac)
